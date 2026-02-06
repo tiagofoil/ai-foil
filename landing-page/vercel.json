@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { 
+      "source": "/blog", 
+      "destination": "https://ai-foil-blog.vercel.app/blog" 
+    },
+    { 
+      "source": "/blog/:match*", 
+      "destination": "https://ai-foil-blog.vercel.app/blog/:match*" 
+    }
+  ]
+}

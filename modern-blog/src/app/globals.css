@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+}
+
+:root {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --primary: #22d3ee;
+  /* Cyan 400 */
+  --primary-foreground: #083344;
+  --secondary: #27272a;
+  /* Zinc 800 */
+  --accent: #a78bfa;
+  /* Violet 400 */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+
+  /* Premium Link Styling */
+  .prose a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--primary), transparent 70%);
+    transition: border-color 0.2s;
+  }
+
+  .prose a:hover {
+    border-bottom-color: var(--primary);
+  }
+
+  /* Headings */
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    color: white;
+    font-weight: 700;
+    scroll-margin-top: 5rem;
+  }
+
+  /* Blockquotes */
+  .prose blockquote {
+    border-left-color: var(--accent);
+    background: color-mix(in srgb, var(--accent), transparent 95%);
+    padding: 1rem 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-style: italic;
+  }
+
+  /* Inline Code */
+  .prose :not(pre)>code {
+    color: var(--accent);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-family: var(--font-geist-mono);
+    font-weight: 500;
+  }
+
+  .prose :not(pre)>code::before,
+  .prose :not(pre)>code::after {
+    content: none;
+  }
+}
