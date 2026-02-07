@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/blog',
-        destination: 'https://ai-foil-blog.vercel.app/blog',
+        destination: 'https://ai-foil-j3xf.vercel.app/blog',
       },
       {
         source: '/blog/:path*',
