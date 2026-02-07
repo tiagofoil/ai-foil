@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/blog/:path*',
-        destination: 'https://ai-foil-blog.vercel.app/blog/:path*',
+        destination: 'https://ai-foil-j3xf.vercel.app/blog/:path*',
       },
     ]
   }
