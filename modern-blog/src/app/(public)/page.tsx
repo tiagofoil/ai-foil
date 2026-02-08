@@ -19,22 +19,22 @@ export default async function HomePage() {
             <div className="fixed inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 z-[-1]" />
 
             {/* Hero Section with Logo & Carousel */}
-            <section className="relative pt-24 pb-12 overflow-hidden">
-                <div className="container mx-auto px-4 text-center space-y-8 mb-12">
+            <section className="relative pt-12 pb-6 overflow-hidden">
+                <div className="container mx-auto px-4 text-center space-y-4 mb-8">
                     <div className="flex justify-center animate-fade-in-up">
                         <img
                             src="/blog/images/logo.png"
                             alt="A.I. Foil Logo"
-                            className="bg-transparent w-[300px] md:w-[400px] h-auto object-contain drop-shadow-[0_0_30px_rgba(34,211,238,0.2)]"
+                            className="bg-transparent w-[220px] md:w-[320px] h-auto object-contain drop-shadow-[0_0_30px_rgba(34,211,238,0.2)]"
                         />
                     </div>
-                    <p className="text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-lg text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
                         Empowering developers and consultants with <span className="text-neon-cyan font-semibold">AI</span> and <span className="text-neon-purple font-semibold">Salesforce</span> patterns.
                     </p>
                 </div>
 
                 {/* 3D Carousel Swiper */}
-                <div className="mb-16">
+                <div className="mb-10">
                     <HeroCarousel posts={posts} />
                 </div>
             </section>
