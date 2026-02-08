@@ -22,7 +22,7 @@ export default async function BlogIndexPage() {
 
                 <div className="space-y-8">
                     {posts.map((post: any) => (
-                        <Link key={post.id} href={`/blog/${post.slug}`} className="block group">
+                        <Link key={post.id} href={`/${post.slug}`} className="block group">
                             <article className="space-y-4">
                                 <div className="flex items-center gap-4 text-sm text-zinc-500">
                                     <time>{formatDate(post.createdAt, "MMMM d, yyyy")}</time>

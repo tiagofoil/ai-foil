@@ -25,8 +25,8 @@ export default async function HomePage() {
                     </p>
                 </div>
                 <div className="flex justify-center gap-4">
-                    <Link href="/blog">
-                        <Button size="lg">Read the Blog</Button>
+                    <Link href="#latest">
+                        <Button size="lg">Read Latest</Button>
                     </Link>
                     <Link href="https://github.com">
                         <Button variant="secondary" size="lg">GitHub</Button>
@@ -35,15 +35,15 @@ export default async function HomePage() {
             </section>
 
             {/* Latest Posts */}
-            <section className="py-20 container mx-auto px-4">
+            <section id="latest" className="py-20 container mx-auto px-4">
                 <div className="flex items-center justify-between mb-12">
                     <h2 className="text-3xl font-bold">Latest Posts</h2>
-                    <Link href="/blog" className="text-primary hover:text-accent transition-colors">View all →</Link>
+                    <Link href="/archive" className="text-primary hover:text-accent transition-colors">View all →</Link>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {posts.map((post: any) => (
-                        <Link key={post.id} href={`/blog/${post.slug}`}>
+                        <Link key={post.id} href={`/${post.slug}`}>
                             <Card className="h-full hover:border-primary/50 transition-colors group cursor-pointer">
                                 <div className="space-y-4">
                                     <div className="space-y-2">
