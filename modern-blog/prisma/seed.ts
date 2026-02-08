@@ -934,6 +934,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
             title: 'I Invited a Lobster into My Laptop (Safely)',
             slug: 'openclaw-moltbot-security-protocol-docker-zapier',
             content: `
+<p><img src="/blog/images/openclaw-lobster.png" alt="A cute pixel-art lobster safe inside nested glass boxes" width="100%" style="border-radius: 8px; margin-bottom: 24px; max-height: 400px; object-fit: cover;" /></p>
 <p>This weekend, I got obsessed with <strong>OpenClaw</strong> (formerly <em>Clawdbot</em>, briefly <em>Moltbot</em>). If you haven't seen it, it is—frankly—terrifying.</p>
 <p>It is an autonomous agent that uses <strong>multimodal vision models</strong> to interpret the OS frame buffer and executes <strong>HID-level input events</strong> to manipulate the GUI. It doesn't just call APIs; it <em>drives the kernel</em>.</p>
 <p>As a Systems Architect, my first reaction was: <strong>"This is a Remote Code Execution (RCE) nightmare by design."</strong><br>My second reaction was: <strong>"I have to try it."</strong></p>
