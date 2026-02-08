@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
 import { prisma } from "@/lib/prisma"
@@ -19,13 +18,10 @@ export default async function HomePage() {
             <section className="py-24 px-4 text-center space-y-8 bg-gradient-to-b from-background to-secondary/20">
                 <div className="space-y-4">
                     <div className="flex justify-center">
-                        <Image
-                            src="/images/logo.png"
+                        <img
+                            src="/blog/images/logo.png"
                             alt="A.I. Foil Logo"
-                            width={400}
-                            height={120}
-                            priority
-                            className="bg-transparent"
+                            className="bg-transparent w-[400px] h-auto object-contain"
                         />
                     </div>
                     <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
