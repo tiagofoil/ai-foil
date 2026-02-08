@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Box, Cpu, Layers } from "lucide-react";
 import WaitlistForm from "./components/WaitlistForm";
 
@@ -10,6 +11,18 @@ export default function Home() {
       <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-neon-purple opacity-20 blur-[100px]"></div>
 
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20 text-center">
+
+        {/* Logo */}
+        <div className="mb-10 animate-fade-in">
+          <Image
+            src="/images/logo.png"
+            alt="AI-FOIL Logo"
+            width={300}
+            height={90}
+            priority
+            className="w-48 md:w-64 h-auto"
+          />
+        </div>
 
         {/* Badge */}
         <div className="animate-fade-in-up mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-neon-cyan backdrop-blur-md">

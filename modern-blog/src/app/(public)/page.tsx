@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
 import { prisma } from "@/lib/prisma"
@@ -17,9 +18,16 @@ export default async function HomePage() {
             {/* Hero */}
             <section className="py-24 px-4 text-center space-y-8 bg-gradient-to-b from-background to-secondary/20">
                 <div className="space-y-4">
-                    <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
-                        A.I. Foil
-                    </h1>
+                    <div className="flex justify-center">
+                        <Image
+                            src="/images/logo.png"
+                            alt="A.I. Foil Logo"
+                            width={400}
+                            height={120}
+                            priority
+                            className="bg-transparent"
+                        />
+                    </div>
                     <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
                         Empowering developers and consultants with AI and Salesforce to create a better life.
                     </p>
