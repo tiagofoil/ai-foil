@@ -21,10 +21,11 @@ async function main() {
         update: {
             // IMPORTANT: This allows rotating the password by re-running seed with new env var
             password,
+            image: '/blog/avatar-placeholder.png',
         },
         create: {
             email,
-            image: '/avatar-placeholder.png'
+            image: '/blog/avatar-placeholder.png'
         },
     })
 
@@ -392,7 +393,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
 
 <h2>📥 Download the Complete QA Checklist</h2>
 <p>Get the full <strong>Agentforce QA Checklist</strong> as a PDF with detailed benchmarks, testing tools, and pre-production criteria:</p>
-<p><strong><a href="/downloads/agentforce-qa-checklist.pdf" download>→ Download the QA Checklist (PDF)</a></strong></p>
+<p><strong><a href="/blog/downloads/agentforce-qa-checklist.pdf" download>→ Download the QA Checklist (PDF)</a></strong></p>
 
 <hr>
 
@@ -467,7 +468,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
 
 <h2>📥 Download the Complete QA Checklist</h2>
 <p>Get the full <strong>Agentforce QA Checklist</strong> as a PDF with detailed benchmarks, testing tools, and pre-production criteria:</p>
-<p><strong><a href="/downloads/agentforce-qa-checklist.pdf" download>→ Download the QA Checklist (PDF)</a></strong></p>
+<p><strong><a href="/blog/downloads/agentforce-qa-checklist.pdf" download>→ Download the QA Checklist (PDF)</a></strong></p>
 
 <hr>
 
@@ -558,7 +559,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
 <h2>📥 Download the Cost Calculator</h2>
 <p>Want to run the numbers for your own org?</p>
 <p>We built a simple <strong>Agentforce vs. Custom Cost Calculator</strong> (Excel/CSV) that lets you plug in your conversation volume and see the break-even point.</p>
-<p><strong><a href="/downloads/agentforce-vs-custom-calculator.csv" download>→ Download the Calculator (.csv)</a></strong></p>
+<p><strong><a href="/blog/downloads/agentforce-vs-custom-calculator.csv" download>→ Download the Calculator (.csv)</a></strong></p>
 
 <hr>
 
@@ -640,7 +641,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
 <h2>📥 Download the Cost Calculator</h2>
 <p>Want to run the numbers for your own org?</p>
 <p>We built a simple <strong>Agentforce vs. Custom Cost Calculator</strong> (Excel/CSV) that lets you plug in your conversation volume and see the break-even point.</p>
-<p><strong><a href="/downloads/agentforce-vs-custom-calculator.csv" download>→ Download the Calculator (.csv)</a></strong></p>
+<p><strong><a href="/blog/downloads/agentforce-vs-custom-calculator.csv" download>→ Download the Calculator (.csv)</a></strong></p>
 
 <hr>
 
@@ -879,7 +880,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
         update: {
             published: true,
             content: `
-<p><img src="/images/openclaw-lobster.png" alt="A cute pixel-art lobster safe inside nested glass boxes" width="100%" style="border-radius: 8px; margin-bottom: 24px; max-height: 400px; object-fit: cover;" /></p>
+<p><img src="/blog/images/openclaw-lobster.png" alt="A cute pixel-art lobster safe inside nested glass boxes" width="100%" style="border-radius: 8px; margin-bottom: 24px; max-height: 400px; object-fit: cover;" /></p>
 <p>This weekend, I got obsessed with <strong>OpenClaw</strong> (formerly <em>Clawdbot</em>, briefly <em>Moltbot</em>). If you haven't seen it, it is—frankly—terrifying.</p>
 <p>It is an autonomous agent that runs locally on your machine with <strong>root-level system capabilities</strong>. It can execute shell commands, manage files, control browsers, and even interface with chat apps. It doesn't just call APIs; it <em>owns the prompt</em>.</p>
 <p>As a Systems Architect, my first reaction was: <strong>"This is a Remote Code Execution (RCE) nightmare by design."</strong><br>My second reaction was: <strong>"I have to try it."</strong></p>
