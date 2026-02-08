@@ -44,7 +44,7 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
 
     return (
         <div className="container mx-auto px-4 py-12">
-            <Link href="/blog" className="inline-flex items-center text-sm text-zinc-400 hover:text-white transition-colors mb-8">
+            <Link href="/" className="inline-flex items-center text-sm text-zinc-400 hover:text-white transition-colors mb-8">
                 <ArrowLeft className="mr-2 h-4 w-4" /> Back to Blog
             </Link>
 
