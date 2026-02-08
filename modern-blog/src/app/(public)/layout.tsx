@@ -16,9 +16,7 @@ export default function PublicLayout({
             <Navbar />
             <main className="flex-1">{children}</main>
             <footer className="border-t border-white/10 py-8 bg-zinc-950">
-                <div className="container mx-auto px-4 text-center text-sm text-zinc-500">
-                    © {new Date().getFullYear()} A.I. Foil. Built with Next.js 15.
-                </div>
+                © {new Date().getFullYear()} A.I. Foil. Built with Next.js 16.
             </footer>
         </div>
     )
