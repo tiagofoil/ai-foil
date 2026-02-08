@@ -1,110 +1,141 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Box, Cpu, Layers } from "lucide-react";
+import { ArrowRight, Box, Cpu, Layers, Sparkles } from "lucide-react";
 import WaitlistForm from "./components/WaitlistForm";
+import { AuroraBackground } from "@/components/ui/AuroraBackground";
+import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
+import { SpotlightCard } from "@/components/ui/SpotlightCard";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-deep-slate overflow-hidden relative selection:bg-neon-cyan selection:text-deep-slate">
-      {/* Background Grid Effect */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-      <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-neon-purple opacity-20 blur-[100px]"></div>
+    <div className="min-h-screen bg-slate-950 selection:bg-neon-cyan selection:text-slate-950 font-sans text-slate-50">
 
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20 text-center">
+      {/* Hero Section with Aurora Background */}
+      <AuroraBackground>
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
 
-        {/* Logo */}
-        <div className="mb-10 animate-fade-in">
-          <Image
-            src="/images/logo.png"
-            alt="AI-FOIL Logo"
-            width={300}
-            height={90}
-            priority
-            className="w-48 md:w-64 h-auto"
-          />
-        </div>
+          {/* Logo */}
+          <div className="mb-10 animate-fade-in drop-shadow-[0_0_25px_rgba(167,139,250,0.2)]">
+            <Image
+              src="/images/logo.png"
+              alt="AI-FOIL Logo"
+              width={300}
+              height={90}
+              priority
+              className="w-56 md:w-72 h-auto"
+            />
+          </div>
 
-        {/* Badge */}
-        <div className="animate-fade-in-up mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-neon-cyan backdrop-blur-md">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-cyan opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-neon-cyan"></span>
-          </span>
-          Innovation Hub Online
-        </div>
-
-        {/* Hero Text */}
-        <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
-          The Foundry of <br className="hidden md:block" />
-          <span className="text-neon-cyan glow-text">Next-Gen Intelligence</span>
-        </h1>
-
-        <p className="max-w-2xl text-lg md:text-xl text-slate-400 mb-10 leading-relaxed font-light">
-          AI-FOIL is the launchpad for high-performance developer tools and AI services.
-          We build the infrastructure that powers the future of software engineering.
-        </p>
-
-        {/* CTA Section (Waitlist + Blog) */}
-        <div className="w-full max-w-md mx-auto mb-16 flex flex-col items-center gap-6">
-          <WaitlistForm />
-
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-2" />
-
-          {/* High Visibility Blog Link */}
-          <Link
-            href="/blog"
-            className="group flex flex-col sm:flex-row items-center gap-2 text-slate-300 hover:text-white transition-all border border-white/5 hover:border-neon-cyan/50 bg-white/5 hover:bg-white/10 px-6 py-3 rounded-full"
-          >
-            <span className="text-sm font-medium">Looking for technical content?</span>
-            <span className="flex items-center gap-1 text-neon-cyan font-semibold">
-              Read engineering insights
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          {/* Badge */}
+          <div className="animate-fade-in-up mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-neon-cyan backdrop-blur-md shadow-[0_0_15px_rgba(34,211,238,0.1)]">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-cyan opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-neon-cyan"></span>
             </span>
-          </Link>
-        </div>
+            <span className="tracking-wide uppercase text-xs font-semibold">System Online</span>
+          </div>
 
-        {/* Ecosystem Grid */}
-        <div className="w-full max-w-5xl">
-          <h2 className="text-sm font-mono text-neon-purple mb-8 uppercase tracking-widest opacity-80">The AI-FOIL Ecosystem</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-            {[
-              {
-                icon: Box,
-                title: "Product Lab",
-                desc: "Incubating experimental AI tools for rapid prototyping and deployment.",
-                status: "ACTIVE"
-              },
-              {
-                icon: Cpu,
-                title: "Core Services",
-                desc: "Enterprise-grade APIs providing intelligence as a service.",
-                status: "COMING SOON"
-              },
-              {
-                icon: Layers,
-                title: "Consultancy",
-                desc: "Strategic implementation of agentic workflows for your business.",
-                status: "AVAILABLE"
-              }
-            ].map((feature, i) => (
-              <div key={i} className="glass-panel p-6 rounded-xl hover:border-white/20 transition-colors group relative overflow-hidden">
-                <div className="absolute top-4 right-4 text-[10px] font-mono border border-white/10 px-2 py-0.5 rounded text-slate-400">
-                  {feature.status}
-                </div>
-                <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="w-6 h-6 text-neon-purple group-hover:text-neon-cyan transition-colors" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{feature.desc}</p>
-              </div>
-            ))}
+          {/* Hero Text */}
+          <h1 className="font-display text-5xl md:text-8xl font-bold tracking-tight mb-8 bg-gradient-to-b from-white via-white to-white/40 bg-clip-text text-transparent drop-shadow-sm">
+            Forging the <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-neon-purple glow-text">
+              Agentic Future
+            </span>
+          </h1>
+
+          <p className="max-w-2xl text-lg md:text-xl text-slate-400 mb-12 leading-relaxed font-light">
+            AI-FOIL is the foundry for high-performance developer tools and Pattern-First architectures.
+          </p>
+
+          {/* CTA Section */}
+          <div className="w-full max-w-md mx-auto mb-20 flex flex-col items-center gap-8">
+            <WaitlistForm />
+
+            <Link
+              href="/blog"
+              className="group flex items-center gap-3 text-slate-400 hover:text-white transition-all duration-300"
+            >
+              <span className="text-sm font-medium tracking-wide border-b border-transparent group-hover:border-neon-cyan/50">
+                Explore Engineering Pattern Archive
+              </span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 group-hover:text-neon-cyan transition-all" />
+            </Link>
           </div>
         </div>
-      </main>
+      </AuroraBackground>
+
+      {/* Ecosystem Section - Bento Grid */}
+      <section className="relative z-10 py-32 px-4 bg-slate-950">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--color-slate-900)_0%,_transparent_100%)] opacity-50 pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto mb-16 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 font-display">The Ecosystem</h2>
+          <p className="text-slate-400">Deployed units and active research sectors.</p>
+        </div>
+
+        <BentoGrid className="max-w-6xl mx-auto">
+          {/* Item 1: Product Lab (Large) */}
+          <SpotlightCard className="md:col-span-2 md:row-span-1 min-h-[250px] p-8">
+            <div className="flex flex-col h-full justify-between relative z-10">
+              <div className="flex items-start justify-between">
+                <div className="p-3 rounded-lg bg-neon-cyan/10 text-neon-cyan w-fit">
+                  <Box className="w-8 h-8" />
+                </div>
+                <span className="text-xs font-mono border border-neon-cyan/20 text-neon-cyan px-2 py-1 rounded bg-neon-cyan/5">ACTIVE</span>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Product Lab</h3>
+                <p className="text-slate-400">Incubating experimental AI tools for rapid prototyping. Access our latest alpha builds and experimental agents before they hit the market.</p>
+              </div>
+            </div>
+          </SpotlightCard>
+
+          {/* Item 2: Core Services */}
+          <SpotlightCard className="md:col-span-1 md:row-span-1 min-h-[250px] p-8">
+            <div className="flex flex-col h-full justify-between relative z-10">
+              <div className="p-3 rounded-lg bg-neon-purple/10 text-neon-purple w-fit">
+                <Cpu className="w-8 h-8" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Core Services</h3>
+                <p className="text-slate-400 text-sm">Enterprise-grade APIs providing intelligence as a service.</p>
+              </div>
+            </div>
+          </SpotlightCard>
+
+          {/* Item 3: Consultancy */}
+          <SpotlightCard className="md:col-span-1 md:row-span-1 min-h-[250px] p-8">
+            <div className="flex flex-col h-full justify-between relative z-10">
+              <div className="p-3 rounded-lg bg-white/10 text-white w-fit">
+                <Layers className="w-8 h-8" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Consultancy</h3>
+                <p className="text-slate-400 text-sm">Strategic implementation of agentic workflows.</p>
+              </div>
+            </div>
+          </SpotlightCard>
+
+          {/* Item 4: Research (New) */}
+          <SpotlightCard className="md:col-span-2 md:row-span-1 min-h-[250px] p-8 bg-gradient-to-br from-white/5 to-white/0">
+            <div className="flex flex-col h-full justify-between relative z-10">
+              <div className="flex items-start justify-between">
+                <div className="p-3 rounded-lg bg-emerald-500/10 text-emerald-400 w-fit">
+                  <Sparkles className="w-8 h-8" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Advanced Research</h3>
+                <p className="text-slate-400">Exploring the boundaries of LLM reasoning, context management, and autonomous code generation.</p>
+              </div>
+            </div>
+          </SpotlightCard>
+        </BentoGrid>
+      </section>
 
       {/* Footer */}
-      <footer className="absolute bottom-4 w-full text-center text-slate-600 text-sm font-mono">
-        © 2026 AI-FOIL CORP // ALL SYSTEMS NOMINAL // v1.0.1
+      <footer className="w-full py-10 text-center text-slate-600 text-sm font-mono border-t border-white/5 bg-slate-950 relative z-10">
+        © 2026 AI-FOIL CORP // SYSTEM STATUS: OPTIMAL
       </footer>
     </div>
   );

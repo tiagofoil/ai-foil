@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { LayoutDashboard, FileText, Tag, Settings, LogOut } from "lucide-react"
-import { cn } from "@/components/ui/Button"
+import { cn } from "@/lib/utils"
 import { signOut } from "next-auth/react"
 
 const navItems = [
