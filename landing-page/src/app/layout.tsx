@@ -21,9 +21,6 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "AI Foil | Professional Cyberpunk Developer Tools",
   description: "Next-gen AI tools for the modern developer landscape.",
-  icons: {
-    icon: '/icon.png',
-  },
 };
 
 export default function RootLayout({

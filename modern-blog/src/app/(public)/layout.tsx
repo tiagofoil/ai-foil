@@ -4,9 +4,6 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "AI Foil Blog",
     description: "Insights on AI, Salesforce, and Agentic workflows.",
-    icons: {
-        icon: '/blog/icon.png', // Needs /blog prefix because of basePath
-    },
 };
 
 export default function PublicLayout({
