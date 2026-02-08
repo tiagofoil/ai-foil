@@ -91,7 +91,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="absolute bottom-4 w-full text-center text-slate-600 text-sm font-mono">
-        © 2026 AI-FOIL CORP // ALL SYSTEMS NOMINAL
+        © 2026 AI-FOIL CORP // ALL SYSTEMS NOMINAL // v1.0.1
       </footer>
     </div>
   );
