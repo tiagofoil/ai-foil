@@ -3,14 +3,19 @@ import { Button } from "@/components/ui/Button"
 import { prisma } from "@/lib/prisma"
 import { HeroCarousel } from "@/components/HeroCarousel"
 import { PostCard } from "@/components/PostCard"
+import { PostGrid } from "@/components/PostGrid" // New import
 
 export default async function HomePage() {
+    // Fetch more posts to fill both sections without duplication
     const posts = await prisma.post.findMany({
         where: { published: true },
         orderBy: { createdAt: "desc" },
-        take: 3,
+        take: 9, // 3 for Carousel + 6 for Grid
         include: { author: true }
     })
+
+    const featuredPosts = posts.slice(0, 3)
+    const recentPosts = posts.slice(3)
 
     return (
         <div className="min-h-screen bg-deep-slate text-slate-50">
@@ -20,7 +25,9 @@ export default async function HomePage() {
 
             {/* Hero Section with Logo & Carousel */}
             <section className="relative pt-12 pb-6 overflow-hidden">
-                <div className="container mx-auto px-4 text-center space-y-4 mb-8">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-neon-purple/10 blur-[120px] rounded-full pointer-events-none z-[-1]" />
+
+                <div className="container mx-auto px-4 text-center space-y-4 mb-10">
                     <div className="flex justify-center animate-fade-in-up">
                         <img
                             src="/blog/images/logo.png"
@@ -33,9 +40,15 @@ export default async function HomePage() {
                     </p>
                 </div>
 
-                {/* 3D Carousel Swiper */}
-                <div className="mb-10">
-                    <HeroCarousel posts={posts} />
+                {/* 3D Carousel Swiper (Featured) */}
+                <div className="mb-10 relative z-10">
+                    {/* Label for Carousel */}
+                    <div className="text-center mb-6">
+                        <span className="inline-block px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-mono text-neon-cyan/80 uppercase tracking-widest backdrop-blur-md">
+                            Featured Intelligence
+                        </span>
+                    </div>
+                    <HeroCarousel posts={featuredPosts} />
                 </div>
             </section>
 
@@ -52,13 +65,7 @@ export default async function HomePage() {
                         </Link>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {posts.map((post: any) => (
-                            <div key={post.id} className="h-[380px]">
-                                <PostCard post={post} />
-                            </div>
-                        ))}
-                    </div>
+                    <PostGrid posts={recentPosts} />
                 </div>
             </section>
         </div>
