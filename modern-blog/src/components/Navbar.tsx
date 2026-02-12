@@ -14,7 +14,7 @@ export default function Navbar() {
                     />
                 </Link>
                 <nav className="flex items-center gap-6">
-                    <Link href="/blog" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                    <Link href="/" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
                         Blog
                     </Link>
                     <Link href="/about" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">

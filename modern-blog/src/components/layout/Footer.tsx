@@ -19,7 +19,7 @@ export function Footer() {
 
                     {/* Navigation */}
                     <div className="flex gap-8 text-sm font-medium text-zinc-400">
-                        <Link href="/blog" className="hover:text-white transition-colors">
+                        <Link href="/" className="hover:text-white transition-colors">
                             Blog
                         </Link>
                         <Link href="/about" className="hover:text-white transition-colors">
