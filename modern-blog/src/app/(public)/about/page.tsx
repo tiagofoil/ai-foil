@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <div className="pt-8 text-center border-t border-white/10">
                     <p className="mb-6 text-zinc-400">Ready to build something intelligent?</p>
                     <div className="flex flex-col md:flex-row justify-center gap-4 items-center">
-                        <Link href="/blog">
+                        <Link href="/">
                             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white w-full md:w-auto">
                                 Read the Blog
                             </Button>
