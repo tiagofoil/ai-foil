@@ -25,7 +25,7 @@ export default async function HomePage() {
 
             {/* Hero Section with Logo & Carousel */}
             <section className="relative pt-12 pb-6 overflow-hidden">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-neon-purple/10 blur-[120px] rounded-full pointer-events-none z-[-1]" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-neon-orange/10 blur-[120px] rounded-full pointer-events-none z-[-1]" />
 
                 <div className="container mx-auto px-4 text-center space-y-4 mb-10">
                     <div className="flex justify-center animate-fade-in-up">
@@ -36,7 +36,7 @@ export default async function HomePage() {
                         />
                     </div>
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
-                        Empowering developers and consultants with <span className="text-neon-cyan font-semibold">AI</span> and <span className="text-neon-purple font-semibold">Salesforce</span> patterns.
+                        Empowering developers and consultants with <span className="text-neon-cyan font-semibold">AI</span> and <span className="text-neon-orange font-semibold">Salesforce</span> patterns.
                     </p>
                 </div>
 

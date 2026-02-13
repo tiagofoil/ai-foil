@@ -8,6 +8,8 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
+  --color-neon-cyan: #22d3ee;
+  --color-neon-orange: #f97316;
 }
 
 :root {
@@ -18,8 +20,8 @@
   --primary-foreground: #083344;
   --secondary: #27272a;
   /* Zinc 800 */
-  --accent: #a78bfa;
-  /* Violet 400 */
+  --accent: #f97316;
+  /* Orange 500 */
 }
 
 body {

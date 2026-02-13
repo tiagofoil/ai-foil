@@ -987,17 +987,17 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
             authorId: user.id,
             excerpt: 'A 5-Layer Security Protocol for running autonomous agents like OpenClaw without nuking your digital life.'
         },
-    });
+    })
     console.log({ post7 })
 
-    // 8. Create/Update Eighth Post (Salesforce vs The World)
+    // 8. Create/Update Eighth Post (Salesforce vs Competitors)
     const post8 = await prisma.post.upsert({
-        where: { slug: 'salesforce-vs-world-2025-agentic-wars' },
+        where: { slug: 'salesforce-vs-world-2026-agentic-wars' },
         update: {
-            published: true,
+            title: 'Salesforce vs. The World: The 2026 Agentic Wars & The Death of Prompt Engineering',
             content: `<h2>The War for the "Agentic Layer"</h2>
 <p>If you thought the "Cloud Wars" were intense, welcome to the <strong>Agentic Wars</strong>.</p>
-<p>In 2025, the battle isn't about who has the best CRM tables. It's about who owns the <strong>Brain</strong> that operates them.</p>
+<p>In 2026, the battle isn't about who has the best CRM tables. It's about who owns the <strong>Brain</strong> that operates them.</p>
 <p>I analyzed the latest strategic moves from Salesforce's top 5 competitors. Here is the state of the battlefield:</p>
 
 <h2>1. The Top 5: Strategies Declassified</h2>
@@ -1044,7 +1044,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
 
 <h2>2. The Death of "Prompt Engineering"</h2>
 <p>In our last post about <strong>OpenClaw</strong>, we saw an agent that didn't need prompts—it needed <em>permission</em>.</p>
-<p>This signals a massive shift in 2025. <strong>Prompt Engineering is dead.</strong></p>
+<p>This signals a massive shift in 2026. <strong>Prompt Engineering is dead.</strong></p>
 <p>If you are still tweaking <code>"You are a helpful assistant"</code> prompts, you are optimizing for 2023.</p>
 <p>The new discipline is <strong>Context Engineering</strong> (or <strong>Spec-Driven Development</strong>).</p>
 
@@ -1075,100 +1075,7 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Salesforce vs. The World: The 2025 Agentic Wars & The Death of Prompt Engineering",
-  "author": {
-    "@type": "Person",
-    "name": "Tiago Duarte",
-    "knowsAbout": ["Salesforce", "Agentforce", "Microsoft Copilot", "HubSpot Breeze", "Spec Driven Development", "Context Engineering"]
-  },
-  "keywords": ["Salesforce Competitors", "Agentforce vs Copilot", "Spec Driven Development", "Context Engineering", "HubSpot Breeze"]
-}
-</script>`,
-        },
-        create: {
-            title: 'Salesforce vs. The World: The 2025 Agentic Wars & The Death of Prompt Engineering',
-            slug: 'salesforce-vs-world-2025-agentic-wars',
-            content: `<h2>The War for the "Agentic Layer"</h2>
-<p>If you thought the "Cloud Wars" were intense, welcome to the <strong>Agentic Wars</strong>.</p>
-<p>In 2025, the battle isn't about who has the best CRM tables. It's about who owns the <strong>Brain</strong> that operates them.</p>
-<p>I analyzed the latest strategic moves from Salesforce's top 5 competitors. Here is the state of the battlefield:</p>
-
-<h2>1. The Top 5: Strategies Declassified</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Competitor</th>
-<th align="left">The AI Bet</th>
-<th align="left">The Strategy</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><strong>Microsoft (Dynamics 365)</strong></td>
-<td align="left"><strong>Copilot</strong></td>
-<td align="left"><strong>The Ubiquity Play.</strong> "You already use Outlook and Teams. Why leave?" They are bundling AI so tightly into Office that CRM becomes just another tab.</td>
-</tr>
-<tr>
-<td align="left"><strong>HubSpot</strong></td>
-<td align="left"><strong>Breeze</strong></td>
-<td align="left"><strong>The Democratization Play.</strong> "AI for the rest of us." While Salesforce targets the Fortune 500 with six-figure Data Cloud implementations, HubSpot is giving "Breeze Agents" to mid-market companies for free (or cheap).</td>
-</tr>
-<tr>
-<td align="left"><strong>Oracle (CX)</strong></td>
-<td align="left"><strong>Fusion AI</strong></td>
-<td align="left"><strong>The Full-Stack Play.</strong> Oracle owns the cloud infrastructure (OCI) <em>and</em> the app. They are pitching "Greenfield" customers on a vertically integrated AI stack that claims to be faster and cheaper than Salesforce's "cloud-on-top-of-AWS" model.</td>
-</tr>
-<tr>
-<td align="left"><strong>SAP (CX)</strong></td>
-<td align="left"><strong>Joule</strong></td>
-<td align="left"><strong>The Process Play.</strong> Integrating AI deep into the supply chain and ERP. Less "flashy chat," more "optimizing logistics."</td>
-</tr>
-<tr>
-<td align="left"><strong>Adobe (Experience)</strong></td>
-<td align="left"><strong>Firefly/Sensei</strong></td>
-<td align="left"><strong>The Creative Play.</strong> Focusing on generative content for marketers. Less overlapping with "Agentic Work," more with "Agentic Creation."</td>
-</tr>
-</tbody>
-</table>
-
-<blockquote>
-<p><strong>Direct Answer:</strong> Salesforce is currently winning the "Marketing War" with the Agentforce brand, but Microsoft is winning the "Usage War" via Copilot bundling. The dangerous underdog is HubSpot, which is quietly capturing the mass market while Salesforce chases the Enterprise whales.</p>
-</blockquote>
-
-<h2>2. The Death of "Prompt Engineering"</h2>
-<p>In our last post about <strong>OpenClaw</strong>, we saw an agent that didn't need prompts—it needed <em>permission</em>.</p>
-<p>This signals a massive shift in 2025. <strong>Prompt Engineering is dead.</strong></p>
-<p>If you are still tweaking <code>"You are a helpful assistant"</code> prompts, you are optimizing for 2023.</p>
-<p>The new discipline is <strong>Context Engineering</strong> (or <strong>Spec-Driven Development</strong>).</p>
-
-<h3>What is Spec-Driven Development (SDD)?</h3>
-<p>SDD is the practice of defining the <em>boundaries, tools, and schema</em> for an agent, rather than the <em>text</em> of its specific instructions.</p>
-<p><strong>Key Tools Leading This Shift:</strong></p>
-<ul>
-<li><strong>GitHub Spec-Kit:</strong> A toolkit to enforce "Spec as Source." You don't write code; you write the Spec, and the Agent implements it.</li>
-<li><strong>Model Context Protocol (MCP):</strong> The standard for how agents "read" the world. If you aren't building MCP servers for your legacy data, your agents are blind.</li>
-<li><strong>Cursor & Windsurf:</strong> IDEs that index your entire codebase (Context), making "prompting" irrelevant. They know your code better than you do.</li>
-</ul>
-
-<h2>3. The "Context Driven" Future</h2>
-<p>We are moving from <strong>Instruction-Based</strong> (telling the AI what to do) to <strong>Context-Based</strong> (giving the AI the resources to figure it out).</p>
-<p>This is why <strong>Context Driven Development (CDD)</strong> is the most critical skill for 2026.</p>
-<p>It means:</p>
-<ol>
-<li><strong>Structuring Data:</strong> RAG is not enough. You need Knowledge Graphs.</li>
-<li><strong>Defining Standards:</strong> If your API docs are messy, the Agent will hallucinate.</li>
-<li><strong>Governance:</strong> Managing <em>what</em> the agent knows, not just <em>what it says</em>.</li>
-</ol>
-
-<h2>Conclusion: Pick Your stack, But Own Your Context</h2>
-<p>Whether you choose Salesforce Agentforce, Microsoft Copilot, or a custom Python Swarm, the winner will not be the one with the best model (GPT-5 vs Claude 4).</p>
-<p>The winner will be the one with the cleanest <strong>Context</strong>.</p>
-<p>Stop engineering prompts. Start engineering truth.</p>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Salesforce vs. The World: The 2025 Agentic Wars & The Death of Prompt Engineering",
+  "headline": "Salesforce vs. The World: The 2026 Agentic Wars & The Death of Prompt Engineering",
   "author": {
     "@type": "Person",
     "name": "Tiago Duarte",
@@ -1179,10 +1086,180 @@ System.assert(agentResponse == 'Create a new case for the customer');</code></pr
 </script>`,
             published: true,
             authorId: user.id,
-            excerpt: "Microsoft, HubSpot, and Oracle are coming for Salesforce's lunch. We analyze the 2025 Agentic battlefield and why 'Prompt Engineering' is being replaced by Spec Driven Development."
+            excerpt: "Microsoft, HubSpot, and Oracle are coming for Salesforce's lunch. We analyze the 2026 Agentic battlefield and why 'Prompt Engineering' is being replaced by Spec Driven Development."
+        },
+        create: {
+            title: 'Salesforce vs. The World: The 2026 Agentic Wars & The Death of Prompt Engineering',
+            slug: 'salesforce-vs-world-2026-agentic-wars',
+            content: `<h2>The War for the "Agentic Layer"</h2>
+<p>If you thought the "Cloud Wars" were intense, welcome to the <strong>Agentic Wars</strong>.</p>
+<p>In 2026, the battle isn't about who has the best CRM tables. It's about who owns the <strong>Brain</strong> that operates them.</p>
+<p>I analyzed the latest strategic moves from Salesforce's top 5 competitors. Here is the state of the battlefield:</p>
+
+<h2>1. The Top 5: Strategies Declassified</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Competitor</th>
+<th align="left">The AI Bet</th>
+<th align="left">The Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>Microsoft (Dynamics 365)</strong></td>
+<td align="left"><strong>Copilot</strong></td>
+<td align="left"><strong>The Ubiquity Play.</strong> "You already use Outlook and Teams. Why leave?" They are bundling AI so tightly into Office that CRM becomes just another tab.</td>
+</tr>
+<tr>
+<td align="left"><strong>HubSpot</strong></td>
+<td align="left"><strong>Breeze</strong></td>
+<td align="left"><strong>The Democratization Play.</strong> "AI for the rest of us." While Salesforce targets the Fortune 500 with six-figure Data Cloud implementations, HubSpot is giving "Breeze Agents" to mid-market companies for free (or cheap).</td>
+</tr>
+<tr>
+<td align="left"><strong>Oracle (CX)</strong></td>
+<td align="left"><strong>Fusion AI</strong></td>
+<td align="left"><strong>The Full-Stack Play.</strong> Oracle owns the cloud infrastructure (OCI) <em>and</em> the app. They are pitching "Greenfield" customers on a vertically integrated AI stack that claims to be faster and cheaper than Salesforce's "cloud-on-top-of-AWS" model.</td>
+</tr>
+<tr>
+<td align="left"><strong>SAP (CX)</strong></td>
+<td align="left"><strong>Joule</strong></td>
+<td align="left"><strong>The Process Play.</strong> Integrating AI deep into the supply chain and ERP. Less "flashy chat," more "optimizing logistics."</td>
+</tr>
+<tr>
+<td align="left"><strong>Adobe (Experience)</strong></td>
+<td align="left"><strong>Firefly/Sensei</strong></td>
+<td align="left"><strong>The Creative Play.</strong> Focusing on generative content for marketers. Less overlapping with "Agentic Work," more with "Agentic Creation."</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><strong>Direct Answer:</strong> Salesforce is currently winning the "Marketing War" with the Agentforce brand, but Microsoft is winning the "Usage War" via Copilot bundling. The dangerous underdog is HubSpot, which is quietly capturing the mass market while Salesforce chases the Enterprise whales.</p>
+</blockquote>
+
+<h2>2. The Death of "Prompt Engineering"</h2>
+<p>In our last post about <strong>OpenClaw</strong>, we saw an agent that didn't need prompts—it needed <em>permission</em>.</p>
+<p>This signals a massive shift in 2026. <strong>Prompt Engineering is dead.</strong></p>
+<p>If you are still tweaking <code>"You are a helpful assistant"</code> prompts, you are optimizing for 2023.</p>
+<p>The new discipline is <strong>Context Engineering</strong> (or <strong>Spec-Driven Development</strong>).</p>
+
+<h3>What is Spec-Driven Development (SDD)?</h3>
+<p>SDD is the practice of defining the <em>boundaries, tools, and schema</em> for an agent, rather than the <em>text</em> of its specific instructions.</p>
+<p><strong>Key Tools Leading This Shift:</strong></p>
+<ul>
+<li><strong>GitHub Spec-Kit:</strong> A toolkit to enforce "Spec as Source." You don't write code; you write the Spec, and the Agent implements it.</li>
+<li><strong>Model Context Protocol (MCP):</strong> The standard for how agents "read" the world. If you aren't building MCP servers for your legacy data, your agents are blind.</li>
+<li><strong>Cursor & Windsurf:</strong> IDEs that index your entire codebase (Context), making "prompting" irrelevant. They know your code better than you do.</li>
+</ul>
+
+<h2>3. The "Context Driven" Future</h2>
+<p>We are moving from <strong>Instruction-Based</strong> (telling the AI what to do) to <strong>Context-Based</strong> (giving the AI the resources to figure it out).</p>
+<p>This is why <strong>Context Driven Development (CDD)</strong> is the most critical skill for 2026.</p>
+<p>It means:</p>
+<ol>
+<li><strong>Structuring Data:</strong> RAG is not enough. You need Knowledge Graphs.</li>
+<li><strong>Defining Standards:</strong> If your API docs are messy, the Agent will hallucinate.</li>
+<li><strong>Governance:</strong> Managing <em>what</em> the agent knows, not just <em>what it says</em>.</li>
+</ol>
+
+<h2>Conclusion: Pick Your stack, But Own Your Context</h2>
+<p>Whether you choose Salesforce Agentforce, Microsoft Copilot, or a custom Python Swarm, the winner will not be the one with the best model (GPT-5 vs Claude 4).</p>
+<p>The winner will be the one with the cleanest <strong>Context</strong>.</p>
+<p>Stop engineering prompts. Start engineering truth.</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Salesforce vs. The World: The 2026 Agentic Wars & The Death of Prompt Engineering",
+  "author": {
+    "@type": "Person",
+    "name": "Tiago Duarte",
+    "knowsAbout": ["Salesforce", "Agentforce", "Microsoft Copilot", "HubSpot Breeze", "Spec Driven Development", "Context Engineering"]
+  },
+  "keywords": ["Salesforce Competitors", "Agentforce vs Copilot", "Spec Driven Development", "Context Engineering", "HubSpot Breeze"]
+}
+</script>`,
+            published: true,
+            authorId: user.id,
+            excerpt: "Microsoft, HubSpot, and Oracle are coming for Salesforce's lunch. We analyze the 2026 Agentic battlefield and why 'Prompt Engineering' is being replaced by Spec Driven Development."
         },
     })
     console.log({ post8 })
+
+    // 9. Create/Update Ninth Post (Agentic SDD)
+    const post9Content = `<h2>The Death of "Vibe Coding"</h2>
+<p><strong>Direct Answer:</strong> SDD (Spec-Driven Development) is the practice of maintaining a "Living Specification" (Markdown/Mermaid) that serves as the single source of truth for AI agents, replacing ephemeral chat context. It ensures that agents remain aligned with architectural constraints and business logic as they iterate.</p>
+<p>You've been there. You type "Fix the bug" or "Add the button," and for the first 10 minutes, it's magic. Then, slowly, the magic turns into "Workslop." The agent starts rewriting files unnecessarily, hallucinating APIs that don't exist, and eventually breaks the very thing it fixed five prompts ago.</p>
+<p>This is the "Context Collapse" trap. You're "Vibe Coding"—relying on the agent's current memory and your own intuition. It works for scripts; it fails for systems. To build production-grade agentic workflows in 2026, you need a Spec.</p>
+<h2>The "Agentic Stack" 2026</h2>
+<p><strong>Direct Answer:</strong> The modern agentic stack consists of three layers: <strong>Your Agentic IDE</strong> (Windsurf, Cursor, VS Code, or OpenAI Codex) for execution, a <strong>Context Protocol or Skill Set</strong> (MCP/Antigravity) for data connectivity, and a <strong>Structured Spec</strong> (Markdown/Rules) as the persistent source of truth.</p>
+<p>In the Agentic Era, the IDE needs to be more than a text editor; it needs to be an orchestrated environment where you are the Architect.</p>
+<h3>1. The Architect (Choosing Your Environment)</h3>
+<p><strong>Direct Answer:</strong> The choice of environment has matured. <strong>Windsurf (Cascade)</strong> and <strong>Cursor (Agent Mode)</strong> remain leaders in deep context, while <strong>VS Code with GitHub Copilot</strong> has evolved into a full agentic powerhouse with native planning and multi-file editing features. The massive arrival of the <strong>OpenAI Codex App</strong> has shifted the focus toward a "Command Center" that orchestrates multiple specialist agents in parallel.</p>
+<p>For those who want to supercharge <em>any</em> of these environments, the <a href="https://github.com/vudovn/antigravity-kit" target="_blank">Antigravity Kit</a> has emerged as the essential "OS layer," providing pre-built skills and specialist templates that make any agent behave like a Senior Engineer.</p>
+<ul>
+<li><strong>Windsurf:</strong> Best for autonomous "thinking" during complex refactorings.</li>
+<li><strong>Cursor:</strong> Best for surgical precision and power-user control.</li>
+<li><strong>VS Code + Copilot:</strong> Best for seamless ecosystem integration (GitHub/Azure). Now a full-blown agentic ecosystem with <strong>Agent HQ</strong> and native orchestration.</li>
+<li><strong>OpenAI Codex:</strong> The ultimate "Agent Orchestrator" for parallel workflows.</li>
+<li><strong>Antigravity Kit:</strong> The "Protocol-Agnostic" kit that levels up every agent with tailored skills.</li>
+</ul>
+<h3>2. The Blueprint (Writing the Spec)</h3>
+<p><strong>Direct Answer:</strong> A "Living Spec" is a structured document (typically <code>.md</code>) that defines the project's requirements, implementation plan, and technical constraints. It acts as the agent's "long-term memory," preventing it from drifting into hallucinations during long development sessions.</p>
+<p>Stop writing 50-page PDFs. Start writing "Unit Specs."</p>
+<ul>
+<li><strong>PRD.md:</strong> The "What" and "Why."</li>
+<li><strong>IMPLEMENTATION_PLAN.md:</strong> The "How."</li>
+<li><strong>TASKS.md:</strong> The "Checklist."</li>
+</ul>
+<p>When the agent finishes a task, it updates the <code>TASKS.md</code>. When you change your mind about the architecture, you update the <code>PLAN.md</code>. The agent reads these <em>every time</em>.</p>
+<h3>3. The Protocol vs. Skills Debate</h3>
+<p><strong>Direct Answer:</strong> While the <strong>Model Context Protocol (MCP)</strong> provides the universal connectivity to external tools (SQL, Jira, APIs), a new trend is emerging: <strong>Agentic Skills</strong>. Projects like <a href="https://github.com/vudovn/antigravity-kit" target="_blank">Antigravity Kit</a> use local "Skills" (structured instruction sets + CLIs) to guide agents to perform complex tasks without the token-overhead or latency of a dedicated MCP server.</p>
+<p>MCP is the "USB-C" of data, but <strong>Skills</strong> are the "Training Manuals." In 2026, the most efficient teams are using MCP for <em>read</em> operations (live data) and Skills for <em>write/orchestration</em> operations (executing CLI commands, deploying, and validating).</p>
+<h2>Workflow: From Idea to PR</h2>
+<p><strong>Direct Answer:</strong> The Agentic SDD workflow follows four distinct steps: 1) Brainstorming (Chat), 2) Crystallization (Writing the Spec), 3) Execution (Agent coding against the Spec), and 4) Verification (Automated testing and manual review against the original requirements).</p>
+<ol>
+<li><strong>Brainstorm:</strong> Talk to <strong>Your Agentic IDE</strong>. "How should we build this?"</li>
+<li><strong>Crystallize:</strong> Save the result to <code>docs/SPEC.md</code>. <strong>This is the most important step.</strong></li>
+<li><strong>Execute:</strong> "Read the SPEC.md and implement Phase 1."</li>
+<li><strong>Verify:</strong> The agent runs the tests. If they pass, you review.</li>
+</ol>
+<h2>Conclusion: Lead or Be Outpaced</h2>
+<p>The "Lone Wolf" developer who types every character is being replaced by the "Agentic Architect" who designs the specs.</p>
+<p>Start building your <code>.agent/</code> folder today. Or get used to the Workslop.</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Stop Vibe Coding: The Spec-Driven Stack for 2026",
+  "author": {
+    "@type": "Person",
+    "name": "Tiago Duarte",
+    "knowsAbout": ["Spec-Driven Development", "SDD", "Windsurf", "Cursor IDE", "OpenAI Codex", "Antigravity Kit", "Agent Skills", "MCP Protocol"]
+  },
+  "keywords": ["SDD", "Windsurf vs Cursor", "Antigravity Kit", "OpenAI Codex", "MCP Protocol", "Agentic IDE", "Spec-Driven Development"]
+}
+</script>`
+
+    const post9 = await prisma.post.upsert({
+        where: { slug: 'agentic-sdd-stack-2026' },
+        update: {
+            title: 'Stop Vibe Coding: The Spec-Driven Stack for 2026',
+            excerpt: "Stop relying on random prompts. We break down the 2026 'Agentic Stack'—IDE, Spec, and Protocol—that turns your AI from a junior dev into a Senior Software Engineer.",
+            published: true,
+            content: post9Content,
+        },
+        create: {
+            title: 'Stop Vibe Coding: The Spec-Driven Stack for 2026',
+            slug: 'agentic-sdd-stack-2026',
+            content: post9Content,
+            published: true,
+            authorId: user.id,
+            excerpt: "Stop relying on random prompts. We break down the 2026 'Agentic Stack'—IDE, Spec, and Protocol—that turns your AI from a junior dev into a Senior Software Engineer."
+        },
+    })
+    console.log({ post9 })
 }
 
 main()

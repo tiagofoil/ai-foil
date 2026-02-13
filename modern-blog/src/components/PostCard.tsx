@@ -51,7 +51,7 @@ export function PostCard({ post }: PostCardProps) {
                 {/* Content Body */}
                 <div className="flex flex-col flex-1 p-6 space-y-4">
                     <div className="space-y-2 flex-1">
-                        <div className="flex items-center gap-2 text-xs text-neon-purple font-mono uppercase tracking-wider">
+                        <div className="flex items-center gap-2 text-xs text-neon-orange font-mono uppercase tracking-wider">
                             <span>{formatDate(new Date(post.createdAt), "MMM d, yyyy")}</span>
                         </div>
                         <h3 className="text-xl font-bold text-white group-hover:text-neon-cyan transition-colors line-clamp-2">
